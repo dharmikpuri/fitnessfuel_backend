@@ -17,6 +17,7 @@ userRouter.post("/register", userValidator, async (req, res) => {
   } else  {
     result = "Over Weight";
   }
+  console.log(req.body)
   try {
     bcrypt.hash(password, 5, async (err, hash) => {
       if (err) {
