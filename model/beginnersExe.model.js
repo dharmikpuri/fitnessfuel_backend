@@ -9,6 +9,7 @@ const beginnersExeSchema = mongoose.Schema({
 
     
     exercise:{type:Array, require:true},
+    
     image:{type:String},
     
 },{
